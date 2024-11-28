@@ -58,5 +58,4 @@ Se você tem algum script que automatiza funções do SEI! e deseja compartilhar
 
 ### Contato para dúvida, contribuição e consultoria em geral.
 
-Luis Carlos  
-[luismelloleite@gmail.com](mailto:luismelloleite@gmail.com)
+Luis Carlos: [luismelloleite@gmail.com](mailto:luismelloleite@gmail.com)
