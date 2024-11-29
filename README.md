@@ -2,9 +2,9 @@
 
 ## Descrição do Projeto
 
-AutomatiSEI! é uma solução de automação para o Sistema Eletrônico de Informações (SEI!) utilizando Selenium e Python. O projeto oferece scripts para automatizar tarefas repetitivas no sistema SEI!, facilitando a extração e manipulação de processos administrativos.
+AutomatiSEI! é uma solução de automação para o Sistema Eletrônico de Informações (SEI!) utilizando Selenium e Python. O projeto oferece exemplos de scripts para automatizar tarefas repetitivas no sistema SEI!, facilitando a extração e manipulação de processos administrativos.
 
-### 🚀 Funcionalidades Principais
+### 🚀 Scripts 
 
 #### 1. Exportação de Processos para CSV
 **Script:** `automatiSEI-busca_processos.py`
@@ -106,7 +106,7 @@ Formas de contribuir:
 ```
 MIT License
 
-Copyright (c) 2024 Luis Carlos
+Copyright (c) 2024 Luis Carlos Leite de Mello
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
