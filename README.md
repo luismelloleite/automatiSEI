@@ -1,61 +1,87 @@
-# automatiSEI!
+# AutomatiSEI! 
+
 ## Automação do SEI! com Selenium e Python
 
 ### Exemplos de Scripts
 
-- **Exportação de Processos para CSV (automatiSEI-busca_processos.py)**: Gera um arquivo CSV com a lista completa de processos de uma unidade específica no SEI! (poderá ser adaptado para outros parâmetros). **Antes de rodar, você precisará inserir seu usuário e senha para acessar o SEI! no início do script**.
-- **Download em Massa de Processos (automatiSEI-download_zip.py)**: Realiza o download em formato ZIP de todos os processos listados em um arquivo CSV (que pode ser gerado via busca_processos.py). **Você também precisará definir o nome da pasta onde os arquivos serão salvos**.
+#### 1. Exportação de Processos para CSV
+**Script: `automatiSEI-busca_processos.py`**
 
-**Observação:** Os scripts abaixo foram desenvolvidos e testados no SEI! versão 4.0.12. Eles podem estar desatualizados ou não funcionar corretamente em versões superiores ou inferiores do SEI!.
+Gera um arquivo CSV com a lista completa de processos de uma unidade específica no SEI!. 
 
----
+**Notas Importantes:**
+- Antes de rodar, você precisará inserir seu **usuário** e **senha** para acessar o SEI! no início do script.
+- Poderá ser adaptado para outros parâmetros de busca.
 
-### Como Preparar o Ambiente para Rodar os Scripts
+#### 2. Download em Massa de Processos
+**Script: `automatiSEI-download_zip.py`**
 
-Para rodar os scripts deste projeto, você precisará instalar algumas bibliotecas Python. Abaixo, explico de forma simples como configurar o ambiente no seu computador.
+Realiza o download em formato ZIP de todos os processos listados em um arquivo CSV (que pode ser gerado via `busca_processos.py`).
 
-#### 1. **Criando um Ambiente Virtual (Recomendado)**
+**Notas Importantes:**
+- Você precisará definir o nome da pasta onde os arquivos serão salvos.
 
-Um **ambiente virtual** ajuda a isolar as bibliotecas que você vai usar no seu projeto, evitando conflitos com outras versões de bibliotecas no seu computador.
+> **Aviso:** Os scripts foram desenvolvidos e testados no SEI! versão 4.0.12. Podem estar desatualizados ou não funcionar corretamente em versões diferentes do SEI!.
 
-- Abra o terminal (ou Prompt de Comando no Windows) e navegue até a pasta onde você baixou o projeto.
-- Crie o ambiente virtual com um comando simples. Isso criará uma pasta para armazenar as dependências do seu projeto.
-- Ative o ambiente virtual para começar a usar.
+### Preparação do Ambiente
 
-#### 2. **Instalando as Bibliotecas Necessárias**
+#### 1. Criação de Ambiente Virtual (Recomendado)
 
-Após ativar o ambiente virtual, você precisa instalar as bibliotecas que o projeto usa. As bibliotecas necessárias estão listadas em um arquivo chamado `requirements.txt`.
+Um ambiente virtual ajuda a isolar as bibliotecas do projeto, evitando conflitos com outras versões no seu computador.
 
-- Com o ambiente ativado, instale as bibliotecas necessárias com um comando simples. Isso vai garantir que o script funcione corretamente.
+```bash
+# Navegue até a pasta do projeto
+cd caminho/para/projeto
 
-#### 3. **Configurando os Scripts**
+# Crie o ambiente virtual
+python -m venv venv
 
-Antes de rodar os scripts, você precisa fazer algumas configurações:
+# Ative o ambiente virtual
+# No Windows
+venv\Scripts\activate
+# No macOS/Linux
+source venv/bin/activate
+```
 
-- **No script `automatiSEI-busca_processos.py`**: Você precisará abrir o script e inserir seu **usuário** e **senha** do SEI! no início do arquivo. Isso permite que o script acesse o SEI! automaticamente.
-  
-- **No script `automatiSEI-download_zip.py`**: Abra o script e defina o **nome da pasta** onde os arquivos ZIP serão salvos. Escolha uma pasta existente no seu computador para armazenar os downloads.
+#### 2. Instalação das Bibliotecas Necessárias
 
-#### 4. **Rodando os Scripts**
+Com o ambiente virtual ativado, instale as dependências:
 
-Depois de configurar tudo, você pode rodar os scripts. Para rodar o script de busca de processos, basta executar o comando correspondente no terminal.
+```bash
+pip install -r requirements.txt
+```
 
-O script de download em massa funciona da mesma forma. Certifique-se de que todos os parâmetros estão configurados corretamente antes de executar os scripts.
+#### 3. Configuração dos Scripts
 
----
+##### automatiSEI-busca_processos.py
+- Abra o script e insira seu **usuário** e **senha** do SEI! no início do arquivo.
 
-### O Que é o Arquivo `requirements.txt`?
+##### automatiSEI-download_zip.py
+- Defina o **nome da pasta** onde os arquivos ZIP serão salvos.
 
-O arquivo `requirements.txt` contém uma lista das bibliotecas Python necessárias para o seu projeto. Ele facilita a instalação dessas bibliotecas de uma vez, garantindo que o script funcione como esperado.
+#### 4. Execução dos Scripts
 
----
+```bash
+# Rodar script de busca de processos
+python automatiSEI-busca_processos.py
 
-### Contribua com seus Scripts
+# Rodar script de download em massa
+python automatiSEI-download_zip.py
+```
 
-Se você tem algum script que automatiza funções do SEI! e deseja compartilhar, entre em contato!
+### Sobre o Arquivo `requirements.txt`
 
----
+O arquivo `requirements.txt` contém a lista de bibliotecas Python necessárias para o projeto. Facilita a instalação das dependências de forma consistente.
 
-### Contato para dúvida, contribuição e consultoria em geral.
+### Contribuições
 
-Luis Carlos: [luismelloleite@gmail.com](mailto:luismelloleite@gmail.com)
+Se você tem scripts para automatizar funções do SEI! e deseja compartilhar, entre em contato!
+
+### Contato
+
+**Luis Carlos**  
+📧 Email: [luismelloleite@gmail.com](mailto:luismelloleite@gmail.com)
+
+### Licença
+
+MIT
