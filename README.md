@@ -35,7 +35,7 @@ AutomatiSEI! é uma solução de automação para o Sistema Eletrônico de Infor
 #### 1. Clonar o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/automatisei.git
+git clone https://github.com/luismelloleite/automatisei.git
 cd automatisei
 ```
 
