@@ -2,7 +2,8 @@
 
 ## Descrição do Projeto
 
-AutomatiSEI! é uma solução de automação para o Sistema Eletrônico de Informações (SEI!) utilizando Selenium e Python. O projeto oferece exemplos de scripts para automatizar tarefas repetitivas no sistema SEI!, facilitando a extração e manipulação de processos administrativos.
+AutomatiSEI! é uma solução exemplo de automação para o Sistema Eletrônico de Informações (SEI!) utilizando Selenium e Python.
+O projeto oferece exemplos de scripts para automatizar tarefas repetitivas no sistema SEI!, facilitando a extração e manipulação de processos administrativos.
 
 ### 🚀 Scripts 
 
@@ -80,7 +81,6 @@ python automatiSEI-download_zip.py
 ## 📦 Dependências
 
 - Selenium
-- Pandas
 - ChromeDriver
 - Outras dependências listadas em `requirements.txt`
 
