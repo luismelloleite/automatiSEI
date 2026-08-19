@@ -1,7 +1,7 @@
 # AutomatiSEI
 
 ## Descrição
-Projeto demonstrativo em Python que ilustra automação do Sistema Eletrônico de Informações (SEI) usando Selenium. Fornece exemplos de automação de tarefas comuns como login, busca, exportação e download de processos. Destina-se a fins educativos e a demonstrar como assistentes de IA podem interagir com o sistema.
+Projeto demonstrativo em Python que ilustra automação do Sistema Eletrônico de Informações (SEI) usando Selenium. Fornece exemplos de automação de tarefas comuns como login, busca, exportação e download de processos. Destina-se a fins educativos.
 
 ## Escopo e objetivo
 Este repositório contém exemplos para automatizar:
