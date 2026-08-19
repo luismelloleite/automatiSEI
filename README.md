@@ -1,128 +1,62 @@
-# AutomatiSEI! 🤖📄
+# AutomatiSEI
 
-## Descrição do Projeto
+## Descrição
+Projeto demonstrativo em Python que ilustra automação do Sistema Eletrônico de Informações (SEI) usando Selenium. Fornece exemplos de automação de tarefas comuns como login, busca, exportação e download de processos. Destina-se a fins educativos e a demonstrar como assistentes de IA podem interagir com o sistema.
 
-AutomatiSEI! é uma solução exemplo de automação para o Sistema Eletrônico de Informações (SEI!) utilizando Selenium e Python.
-O projeto oferece exemplos de scripts para automatizar tarefas repetitivas no sistema SEI!, facilitando a extração e manipulação de processos administrativos.
+## Escopo e objetivo
+Este repositório contém exemplos para automatizar:
+1. Autenticação no SEI
+2. Busca e filtragem de processos
+3. Exportação de resultados para CSV
+4. Download em massa de processos em formato ZIP
 
-### 🚀 Scripts 
+O foco é demonstrativo e não configura recomendação de uso em ambiente de produção.
 
-#### 1. Exportação de Processos para CSV
-**Script:** `automatiSEI-busca_processos.py`
+## Principais scripts
+1. `automatiSEI-busca_processos.py` — busca processos e gera CSV com os resultados
+2. `automatiSEI-download_zip.py` — realiza download em massa a partir de um CSV
 
-- Gera arquivo CSV com lista completa de processos de uma unidade específica
-- Personalizável para diversos parâmetros de busca
-- Simplifica a extração de dados do SEI!
+## Compatibilidade
+Desenvolvido e testado com SEI versão 4.0.12. Pode não ser compatível com outras versões.
 
-#### 2. Download em Massa de Processos
-**Script:** `automatiSEI-download_zip.py`
+## Requisitos
+1. Python 3.7 ou superior
+2. pip
+3. Navegador Chrome e ChromeDriver compatível
+4. Dependências listadas em `requirements.txt`
 
-- Baixa processos em formato ZIP a partir de lista CSV
-- Automatiza o download de múltiplos processos
-- Integração direta com script de busca
+## Instalação rápida
+1. Clone o repositório
+   git clone https://github.com/luismelloleite/automatiSEI.git
+   cd automatiSEI
+2. Crie e ative um ambiente virtual
+   python -m venv venv
+   venv\Scripts\activate   # Windows
+   source venv/bin/activate   # macOS ou Linux
+3. Instale as dependências
+   pip install -r requirements.txt
 
-> **⚠️ Aviso:** Desenvolvido e testado no SEI! versão 4.0.12. Compatibilidade com outras versões pode variar.
+## Configuração
+1. Configure credenciais de acesso ao SEI. Os exemplos colocam usuário e senha nos scripts; recomenda-se usar variáveis de ambiente ou arquivos de configuração.
+2. Ajuste parâmetros de busca conforme a unidade e filtros desejados.
+3. Defina o diretório de destino para os downloads no script de download.
 
-## 🛠 Configuração do Ambiente
+## Execução
+1. Buscar processos
+   python automatiSEI-busca_processos.py
+2. Efetuar download em massa
+   python automatiSEI-download_zip.py
 
-### Pré-requisitos
+## Segurança e responsabilidade
+Este repositório é uma demonstração. Evite inserir credenciais em código-fonte público. Verifique as políticas do SEI e da sua organização antes de automatizar operações, pois o uso indevido pode violar regras ou termos de serviço.
 
-- Python 3.7+
-- Pip
-- Navegador Chrome (para Selenium)
+## Contribuições
+Contribuições são bem-vindas. Abra issues para bugs ou sugestões e envie pull requests com melhorias ou novos exemplos.
 
-### Configuração Passo a Passo
+## Contato
+Luis Carlos  
+luismelloleite@gmail.com
 
-#### 1. Clonar o Repositório
-
-```bash
-git clone https://github.com/luismelloleite/automatisei.git
-cd automatisei
-```
-
-#### 2. Criar Ambiente Virtual
-
-```bash
-# Criar ambiente virtual
-python -m venv venv
-
-# Ativar ambiente virtual
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
-```
-
-#### 3. Instalar Dependências
-
-```bash
-pip install -r requirements.txt
-```
-
-#### 4. Configurar Credenciais
-
-##### `automatiSEI-busca_processos.py`
-- Abra o script
-- Insira seu **usuário** e **senha** do SEI! 
-
-##### `automatiSEI-download_zip.py`
-- Defina o **diretório de destino** para downloads
-
-### 🚀 Execução dos Scripts
-
-```bash
-# Buscar processos
-python automatiSEI-busca_processos.py
-
-# Download em massa
-python automatiSEI-download_zip.py
-```
-
-## 📦 Dependências
-
-- Selenium
-- ChromeDriver
-- Outras dependências listadas em `requirements.txt`
-
-## 🤝 Contribuições
-
-Contribuições são bem-vindas! 
-
-Formas de contribuir:
-- Reportar bugs
-- Sugerir melhorias
-- Enviar pull requests
-- Compartilhar scripts de automação do SEI!
-
-## 📞 Contato
-
-**Luis Carlos**  
-📧 [luismelloleite@gmail.com](mailto:luismelloleite@gmail.com)
-
-## 📄 Licença
-
-[MIT License](https://opensource.org/licenses/MIT)
-
-```
-MIT License
-
-Copyright (c) 2024 Luis Carlos Leite de Mello
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+## Licença
+MIT License  
+https://opensource.org/licenses/MIT
