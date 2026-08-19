@@ -10,8 +10,6 @@ Este repositório contém exemplos para automatizar:
 3. Exportação de resultados para CSV
 4. Download em massa de processos em formato ZIP
 
-O foco é demonstrativo e não configura recomendação de uso em ambiente de produção.
-
 ## Principais scripts
 1. `automatiSEI-busca_processos.py` — busca processos e gera CSV com os resultados
 2. `automatiSEI-download_zip.py` — realiza download em massa a partir de um CSV
