@@ -35,7 +35,7 @@ Desenvolvido e testado com SEI versão 4.0.12. Pode não ser compatível com out
    pip install -r requirements.txt
 
 ## Configuração
-1. Configure credenciais de acesso ao SEI. Os exemplos colocam usuário e senha nos scripts; recomenda-se usar variáveis de ambiente ou arquivos de configuração.
+1. Configure credenciais de acesso ao SEI nos scripts ou via variáveis de ambiente ou arquivos de configuração.
 2. Ajuste parâmetros de busca conforme a unidade e filtros desejados.
 3. Defina o diretório de destino para os downloads no script de download.
 
@@ -44,9 +44,6 @@ Desenvolvido e testado com SEI versão 4.0.12. Pode não ser compatível com out
    python automatiSEI-busca_processos.py
 2. Efetuar download em massa
    python automatiSEI-download_zip.py
-
-## Segurança e responsabilidade
-Este repositório é uma demonstração. Evite inserir credenciais em código-fonte público. Verifique as políticas do SEI e da sua organização antes de automatizar operações, pois o uso indevido pode violar regras ou termos de serviço.
 
 ## Contribuições
 Contribuições são bem-vindas. Abra issues para bugs ou sugestões e envie pull requests com melhorias ou novos exemplos.
